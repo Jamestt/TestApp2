@@ -1,9 +1,14 @@
 <resources>
+    <!--Main Page-->
     <string name="app_name">TestApp2</string>
 
 
     <string name="main_Title">Did you know?</string>
     <string name="action_settings">Settings</string>
     <string name="main_button">Show another fun fact</string>
+    <string name="title_activity_page2">Page2</string>
+    <string name="hello_world">Hello world!</string>
 
+    <!--Second Page-->
+    <string name="intro_title">This is the second page</string>
 </resources>
