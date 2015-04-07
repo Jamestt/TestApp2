@@ -29,10 +29,22 @@ public class MainActivity extends ActionBarActivity {
                 //Update TextView when Button Clicked
                 Random NumberGenerator = new Random();
                 int RandomNumber = NumberGenerator.nextInt(3);
-                String fact = RandomNumber + "";
+                String[] facts = {
+                        "Ants Strech when they wake up in the morning",
+                        "Ostriches can run faster than horses",
+                        "Olympic gold medals are made mostly of silver",
+                        "Sadly there was an error producing the random number"
+                };
 
-                factLabel.setText(fact);
-
+                if(RandomNumber == 0){
+                    factLabel.setText(facts[0]);
+                }else if(RandomNumber == 1){
+                    factLabel.setText(facts[1]);
+                }else if(RandomNumber == 2){
+                    factLabel.setText(facts[2]);
+                }else{
+                    factLabel.setText(facts[3]);
+                }
             }
         };
         showFactbutton.setOnClickListener(listener);
