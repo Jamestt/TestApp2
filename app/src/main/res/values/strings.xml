@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">TestApp2</string>
 
-    <string name="hello_world">Hello world!</string>
+
+    <string name="main_Title">Did you know?</string>
     <string name="action_settings">Settings</string>
+    <string name="main_button">Show another fun fact</string>
+
 </resources>
