@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -25,8 +27,12 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 //Update TextView when Button Clicked
-                String fact = "This is my new ant based fact";
+                Random NumberGenerator = new Random();
+                int RandomNumber = NumberGenerator.nextInt(3);
+                String fact = RandomNumber + "";
+
                 factLabel.setText(fact);
+
             }
         };
         showFactbutton.setOnClickListener(listener);
